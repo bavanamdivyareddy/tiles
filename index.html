@@ -1,57 +1,475 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Patel & Co - Premium Tiles & Sanitary Ware</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patel & Co - Premium Tiles & Sanitary Ware | Wanaparthy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap)" rel="stylesheet">
+    <link rel="stylesheet" href="[cdnjs.cloudflare.com](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css)">
 </head>
 <body>
-<nav class="navbar">
-  <div class="container">
-    <h2>Patel & Co</h2>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#products">Products</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </div>
-</nav>
-
-<section id="home" class="hero">
-  <h1>Transform Your Home With Premium Tiles</h1>
-  <p>Elegant designs, superior quality, and timeless beauty for every space.</p>
-  <a href="#contact" class="btn">Contact Us</a>
-</section>
-
-<section id="products" class="section">
-<h2>Our Products</h2>
-<div class="cards">
-<div class="card">Tiles</div>
-<div class="card">Sanitary Ware</div>
-<div class="card">Bath Fittings</div>
-</div>
-</section>
-
-<section id="gallery" class="section">
-<h2>Gallery</h2>
-<p>Replace these placeholder images with your showroom photos later.</p>
-</section>
-
-<section id="about" class="section">
-<h2>About Patel & Co</h2>
-<p>Owned by B. Venkataram Reddy. Serving Wanaparthy with premium tiles and sanitary ware solutions.</p>
-</section>
-
-<section id="contact" class="section">
-<h2>Contact</h2>
-<p>Opposite Sangam Function Hall, Wanaparthy, Telangana - 509103</p>
-<p>Phone / WhatsApp: 9440930752</p>
-<p>Email: reddyvenkatram@gmail.com</p>
-</section>
-
-<script src="script.js"></script>
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon"><i class="fas fa-th-large"></i></span>
+                <div class="logo-text">
+                    <span class="logo-main">Patel & Co</span>
+                    <span class="logo-sub">Premium Tiles & Sanitary Ware</span>
+                </div>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#products" class="nav-link">Products</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-badge">✦ Wanaparthy's Finest Showroom</p>
+            <h1 class="hero-title">Transform Your Home<br>With <span class="gold">Premium Tiles</span></h1>
+            <p class="hero-subtitle">Elegant designs, superior quality, and timeless beauty for every space.</p>
+            <div class="hero-buttons">
+                <a href="#products" class="btn btn-gold">Explore Collection</a>
+                <a href="#contact" class="btn btn-outline">Contact Us</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+    <!-- ===== WHY CHOOSE US ===== -->
+    <section class="why-us" id="why">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-tag">Why Choose Us</p>
+                <h2 class="section-title">Built on Trust & Quality</h2>
+                <p class="section-desc">We bring decades of expertise in premium tiles and sanitary ware to every project.</p>
+            </div>
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-medal"></i></div>
+                    <h3>Premium Quality</h3>
+                    <p>Every tile is handpicked from top-certified manufacturers ensuring durability, finish, and lasting elegance.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-layer-group"></i></div>
+                    <h3>Wide Collection</h3>
+                    <p>500+ designs covering floor, wall, kitchen, bathroom, marble finish, and outdoor tiles under one roof.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-handshake"></i></div>
+                    <h3>Trusted Service</h3>
+                    <p>Serving homeowners, architects, and builders for 15+ years with honest pricing and expert guidance.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-tags"></i></div>
+                    <h3>Affordable Prices</h3>
+                    <p>Luxury look at competitive prices. We offer flexible deals for bulk orders and builder projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===== PRODUCT CATEGORIES ===== -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-tag">Our Collections</p>
+                <h2 class="section-title">Explore Our Tile Range</h2>
+                <p class="section-desc">Premium tiles for every corner of your space — from living rooms to outdoor terraces.</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="[images.unsplash.com](https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop)" alt="Floor Tiles">
+                        <div class="product-overlay"><span>View Collection</span></div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Floor Tiles</h3>
+                        <p>Durable, slip-resistant floor tiles with rich textures for living rooms, halls, and commercial spaces.</p>
+                        <a href="#contact" class="product-link">Enquire Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="[images.unsplash.com](https://images.unsplash.com/photo-1615873968403-89e068629265?w=400&h=300&fit=crop)" alt="Wall Tiles">
+                        <div class="product-overlay"><span>View Collection</span></div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Wall Tiles</h3>
+                        <p>Glossy, matte, and textured wall tiles that add dimension and elegance to any interior wall.</p>
+                        <a href="#contact" class="product-link">Enquire Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="[images.unsplash.com](https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop)" alt="Kitchen Tiles">
+                        <div class="product-overlay"><span>View Collection</span></div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Kitchen Tiles</h3>
+                        <p>Stain-resistant, easy-to-clean tiles designed specially for modern and traditional Indian kitchens.</p>
+                        <a href="#contact" class="product-link">Enquire Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="[images.unsplash.com](https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=400&h=300&fit=crop)" alt="Bathroom Tiles">
+                        <div class="product-overlay"><span>View Collection</span></div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Bathroom Tiles</h3>
+                        <p>Waterproof, anti-skid bathroom tiles in modern spa-inspired designs for a luxurious feel.</p>
+                        <a href="#contact" class="product-link">Enquire Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="[images.unsplash.com](https://images.unsplash.com/photo-1600607688969-a5bfcd646154?w=400&h=300&fit=crop)" alt="Outdoor Tiles">
+                        <div class="product-overlay"><span>View Collection</span></div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Outdoor Tiles</h3>
+                        <p>Weather-resistant, high-grip tiles perfect for patios, terraces, gardens, and outdoor walkways.</p>
+                        <a href="#contact" class="product-link">Enquire Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="[images.unsplash.com](https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&h=300&fit=crop)" alt="Marble Finish Tiles">
+                        <div class="product-overlay"><span>View Collection</span></div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Marble Finish Tiles</h3>
+                        <p>Stunning marble-look tiles that bring luxury aesthetics to your home at a fraction of the cost.</p>
+                        <a href="#contact" class="product-link">Enquire Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===== GALLERY SECTION ===== -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-tag">Our Gallery</p>
+                <h2 class="section-title">Real Spaces, Real Beauty</h2>
+                <p class="section-desc">Stunning transformations from our customers across Wanaparthy and beyond.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-large">
+                    <img src="[images.unsplash.com](https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=700&h=500&fit=crop)" alt="Living Room">
+                    <div class="gallery-label">Living Room</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="[images.unsplash.com](https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop)" alt="Kitchen">
+                    <div class="gallery-label">Kitchen</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="[images.unsplash.com](https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=400&h=300&fit=crop)" alt="Bathroom">
+                    <div class="gallery-label">Bathroom</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="[images.unsplash.com](https://images.unsplash.com/photo-1540518614846-7eded433c457?w=400&h=300&fit=crop)" alt="Bedroom">
+                    <div class="gallery-label">Bedroom</div>
+                </div>
+                <div class="gallery-item gallery-wide">
+                    <img src="[images.unsplash.com](https://images.unsplash.com/photo-1600607688969-a5bfcd646154?w=700&h=300&fit=crop)" alt="Outdoor Area">
+                    <div class="gallery-label">Outdoor Area</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===== ABOUT US ===== -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="[images.unsplash.com](https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=700&fit=crop)" alt="Patel & Co Showroom">
+                    <div class="about-badge">
+                        <span class="badge-num">15+</span>
+                        <span class="badge-text">Years of Excellence</span>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <p class="section-tag">About Us</p>
+                    <h2 class="section-title">Wanaparthy's Most Trusted Tiles Partner</h2>
+                    <p class="about-text">
+                        Founded by <strong>B. Venkataram Reddy</strong>, Patel & Co has been the cornerstone of beautiful homes in Wanaparthy and the surrounding region for over 15 years. What started as a small showroom has grown into one of the most trusted names in premium tiles and sanitary ware in Telangana.
+                    </p>
+                    <p class="about-text">
+                        We believe your home deserves the best. That's why we curate only high-grade, certified products from leading manufacturers — combining Italian elegance, modern Indian design sensibilities, and unmatched durability.
+                    </p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Family-owned with personal service</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>ISI & BIS certified tile collections</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Free design consultation available</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Bulk orders for builders & contractors</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-gold">Get Free Consultation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===== STATS SECTION ===== -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-num">10,000+</span>
+                    <span class="stat-label">Happy Customers</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">500+</span>
+                    <span class="stat-label">Tile Designs</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">15+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">100+</span>
+                    <span class="stat-label">Builders Served</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-tag">Testimonials</p>
+                <h2 class="section-title">What Our Customers Say</h2>
+                <p class="section-desc">Trusted by thousands of happy homeowners and builders across the region.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Patel & Co transformed our entire home. The marble finish tiles in our living room look absolutely stunning. Mr. Reddy guided us patiently through every design choice. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RK</div>
+                        <div class="author-info">
+                            <strong>Rajesh Kumar</strong>
+                            <span>Homeowner, Wanaparthy</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card featured-testimonial">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"As a builder, I've sourced tiles from many vendors. Patel & Co stands out for consistent quality, competitive pricing, and timely delivery. They've been my go-to supplier for 5+ years."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SM</div>
+                        <div class="author-info">
+                            <strong>Suresh Murthy</strong>
+                            <span>Civil Contractor, Mahbubnagar</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Excellent collection of bathroom tiles! The staff helped me pick the perfect combination for my new apartment. The quality is top-notch and the pricing was very fair. Love the result!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">PL</div>
+                        <div class="author-info">
+                            <strong>Priya Lakshmi</strong>
+                            <span>Interior Designer, Hyderabad</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-tag">Contact Us</p>
+                <h2 class="section-title">Let's Build Something Beautiful</h2>
+                <p class="section-desc">Visit our showroom or drop us a message — we'll help you find the perfect tiles.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <strong>Our Showroom</strong>
+                            <p>Patel & Co - Premium Tiles & Sanitary Ware<br>Wanaparthy, Telangana, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <strong>Call Us</strong>
+                            <p>+91 98765 43210<br>+91 91234 56789</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <strong>Email Us</strong>
+                            <p>info@patelandco.in<br>sales@patelandco.in</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                        <div>
+                            <strong>Working Hours</strong>
+                            <p>Mon – Sat: 9:00 AM – 7:00 PM<br>Sunday: 10:00 AM – 4:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrap">
+                    <form class="contact-form" onsubmit="handleSubmit(event)">
+                        <div class="form-group">
+                            <label>Your Name</label>
+                            <input type="text" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input type="tel" placeholder="Enter your phone number" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" placeholder="Enter your email address">
+                        </div>
+                        <div class="form-group">
+                            <label>Your Message</label>
+                            <textarea placeholder="Tell us about your project or tile requirements..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-gold btn-full">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                        <p class="form-success" id="formSuccess">✅ Thank you! We'll contact you within 24 hours.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon"><i class="fas fa-th-large"></i></span>
+                        <div class="logo-text">
+                            <span class="logo-main">Patel & Co</span>
+                            <span class="logo-sub">Premium Tiles & Sanitary Ware</span>
+                        </div>
+                    </div>
+                    <p class="footer-desc">Your trusted partner for premium tiles in Wanaparthy. Quality you can see, durability you can trust.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#products"><i class="fas fa-chevron-right"></i> Products</a></li>
+                        <li><a href="#gallery"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Our Products</h4>
+                    <ul>
+                        <li><a href="#products"><i class="fas fa-chevron-right"></i> Floor Tiles</a></li>
+                        <li><a href="#products"><i class="fas fa-chevron-right"></i> Wall Tiles</a></li>
+                        <li><a href="#products"><i class="fas fa-chevron-right"></i> Kitchen Tiles</a></li>
+                        <li><a href="#products"><i class="fas fa-chevron-right"></i> Bathroom Tiles</a></li>
+                        <li><a href="#products"><i class="fas fa-chevron-right"></i> Marble Finish</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Details</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Wanaparthy, Telangana, India</p>
+                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                    <p><i class="fas fa-envelope"></i> info@patelandco.in</p>
+                    <p><i class="fas fa-clock"></i> Mon–Sat: 9AM – 7PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 <span class="gold">Patel & Co</span>. All Rights Reserved. | Owner: B. Venkataram Reddy | Wanaparthy, Telangana</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Sticky Navbar
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            const hamburger = document.getElementById('hamburger');
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        }
+        // Close menu on link click
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navLinks').classList.remove('active');
+                document.getElementById('hamburger').classList.remove('active');
+            });
+        });
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+        // Form Submit
+        function handleSubmit(e) {
+            e.preventDefault();
+            document.getElementById('formSuccess').style.display = 'block';
+            e.target.reset();
+            setTimeout(() => {
+                document.getElementById('formSuccess').style.display = 'none';
+            }, 5000);
+        }
+    </script>
 </body>
 </html>
